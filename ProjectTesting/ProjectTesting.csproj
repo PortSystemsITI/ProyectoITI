@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2B15800-498D-4AA2-9104-092B09CD3305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectTesting</RootNamespace>
+    <AssemblyName>ProjectTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertaCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertaCocina.Designer.cs">
+      <DependentUpon>AlertaCocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CocinaAlerta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CocinaAlerta.Designer.cs">
+      <DependentUpon>CocinaAlerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colecciones\ColeccionDatosPrueba.cs" />
+    <Compile Include="Colecciones\Departamentos.cs" />
+    <Compile Include="Colecciones\Dietas.cs" />
+    <Compile Include="Colecciones\Menus.cs" />
+    <Compile Include="Colecciones\PaletaDeColores.cs" />
+    <Compile Include="Colecciones\Viandas.cs" />
+    <Compile Include="Colecciones\Zonas.cs" />
+    <Compile Include="Controladores\ControladorSucursales.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrograminCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrograminCocina.Designer.cs">
+      <DependentUpon>FormPrograminCocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDietas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDietas.Designer.cs">
+      <DependentUpon>FormDietas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMenus.Designer.cs">
+      <DependentUpon>FormMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPedidos.Designer.cs">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSucursales.Designer.cs">
+      <DependentUpon>FormSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormViandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormViandas.Designer.cs">
+      <DependentUpon>FormViandas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormZonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormZonas.Designer.cs">
+      <DependentUpon>FormZonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsClientes\FormIngresarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsClientes\FormIngresarCliente.Designer.cs">
+      <DependentUpon>FormIngresarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsDietas\FormIngresarDieta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsDietas\FormIngresarDieta.Designer.cs">
+      <DependentUpon>FormIngresarDieta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsMenus\FormAgregarMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsMenus\FormAgregarMenu.Designer.cs">
+      <DependentUpon>FormAgregarMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsPedidos\FormIngresarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsPedidos\FormIngresarPedido.Designer.cs">
+      <DependentUpon>FormIngresarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsSucursales\FormAgregarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsSucursales\FormAgregarSucursal.Designer.cs">
+      <DependentUpon>FormAgregarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsViandas\FormAgregarVianda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsViandas\FormAgregarVianda.Designer.cs">
+      <DependentUpon>FormAgregarVianda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsZonas\FormAgregarZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsZonas\FormAgregarZona.Designer.cs">
+      <DependentUpon>FormAgregarZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubFormsZonas\FormZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormsZonas\FormZona.Designer.cs">
+      <DependentUpon>FormZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISubForm.cs" />
+    <Compile Include="ItemVianda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemVianda.Designer.cs">
+      <DependentUpon>ItemVianda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Departamento.cs" />
+    <Compile Include="Modelos\Dieta.cs" />
+    <Compile Include="Modelos\Menu.cs" />
+    <Compile Include="Modelos\Vianda.cs" />
+    <Compile Include="Modelos\Zona.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlertaCocina.resx">
+      <DependentUpon>AlertaCocina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CocinaAlerta.resx">
+      <DependentUpon>CocinaAlerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrograminCocina.resx">
+      <DependentUpon>FormPrograminCocina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDietas.resx">
+      <DependentUpon>FormDietas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenus.resx">
+      <DependentUpon>FormMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPedidos.resx">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSucursales.resx">
+      <DependentUpon>FormSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormViandas.resx">
+      <DependentUpon>FormViandas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormZonas.resx">
+      <DependentUpon>FormZonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsClientes\FormIngresarCliente.resx">
+      <DependentUpon>FormIngresarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsDietas\FormIngresarDieta.resx">
+      <DependentUpon>FormIngresarDieta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsMenus\FormAgregarMenu.resx">
+      <DependentUpon>FormAgregarMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsPedidos\FormIngresarPedido.resx">
+      <DependentUpon>FormIngresarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsSucursales\FormAgregarSucursal.resx">
+      <DependentUpon>FormAgregarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsViandas\FormAgregarVianda.resx">
+      <DependentUpon>FormAgregarVianda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsZonas\FormAgregarZona.resx">
+      <DependentUpon>FormAgregarZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormsZonas\FormZona.resx">
+      <DependentUpon>FormZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemVianda.resx">
+      <DependentUpon>ItemVianda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\icons8-carrot-32.png" />
+    <Content Include="Iconos\icons8-customer-32.png" />
+    <Content Include="Iconos\icons8-diet-32.png" />
+    <Content Include="Iconos\icons8-location-32.png" />
+    <Content Include="Iconos\icons8-restaurant-32.png" />
+    <Content Include="Iconos\icons8-statistics-32.png" />
+    <Content Include="Iconos\icons8-take-away-food-32.png" />
+    <Content Include="Iconos\pedidos.png.png" />
+    <Content Include="Iconos\sucursal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
